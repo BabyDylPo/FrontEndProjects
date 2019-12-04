@@ -214,3 +214,20 @@ body {
     position: relative;
     top: 65px;
 }
+
+/* FOUR COLUMN SECTION */
+/* THIS IS NOT COMPLETE */
+.four-cols {
+    margin: 60px 9% 25px;
+}
+.four-col {
+    height: 500px;
+    margin-bottom: 30px;
+}
+.four-col .para-text {
+    padding: 10px 20px;
+    text-align: left;
+}
+.four-col .gray-btn {
+    margin-top: 15px;
+}
