@@ -231,3 +231,28 @@ body {
 .four-col .gray-btn {
     margin-top: 15px;
 }
+
+/* ONE COLUMN SECTION */
+.one-cols {
+    margin: 10px 15px 60px;
+}
+.one-col {
+    text-align: left;
+}
+/* IDK WHAT THE BELOW IS DOING */
+.one-col .box {
+    padding: 30px;
+}
+/* ALSO DONT KNOW WHAT THIS DOES */
+/* WHAT IS .box */
+.box .sm-title, .box .para-text {
+    padding: 0;
+}
+.box .gray-btn {
+    margin-top: 20px;
+}
+
+/* CONTACT SECTION */
+.contact {
+    back
+}
