@@ -189,4 +189,28 @@ body {
 .two-col .para-text {
     margin-top: 0;
     padding: 27px;
-} 
+}
+
+/* SERVICES SECTION */
+
+.services {
+    background: url("../assets/images/bg-2.jpg") center center / cover no-repeat;
+    color: #fff;
+    height: 433px;
+    text-align: center;
+}
+.services .title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px #aaa;
+}
+.services .para-text {
+    font-size: 18px;
+}
+.sb-text {
+    position: relative;
+    top: 65px;
+}
