@@ -1,70 +1,192 @@
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: red;
+/* #Base: typography */
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+/* #Components: nav, buttons, forms */
+
+.hamburger {
+    height: 40px;
+    position: fixed;
+    right: 15px;
+    top: 5px;
 }
 .nav {
-    
+    display: block;
+    height: 0;
+    margin: 0 15px;
+    overflow: hidden;
+    padding-left: 0;
+    position: fixed;
+    top: 50px;
+    transition: height 0.8s;
 }
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav-open {
+    display: block;
+    height: 204px;
 }
-.three-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.nav-option {
+    background-color: #383E4C;
+    border-bottom: 1px solid #999;
+    font-size: 16px;
+    height: 20px;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 290px;
 }
-.three-column div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav-option-current {
+    background-color: #49505F;
 }
-.two-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.nav-option:last-child {
+    border-bottom: none;
 }
-.two-column div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav-option .link {
+    color: #fff;
 }
-.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-align: center;
 }
-.four-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.green-btn {
+    background-color: #449D44;
 }
-.four-column div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.blue-btn {
+    background-color: #31B0D5;
 }
-.one-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.red-btn {
+    background-color: #C9302C;
 }
-.one-column div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.gray-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #666;
 }
+.darkgray-btn {
+    background-color: #262628;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.form {
+    background-color: rgba(242, 242, 242, 0.4);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    display: block;
+    font-family: inherit; /* need this beacause form elements don't inherit FF unless you tell them to */
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    width: 92%;
+}
+.f-text {
+    height: 120px;
+}
+::-webkit-input-placeholder {
+    color: #000; /* this changes the color of Name, Email and Subject to the same as Your message here... */
+}
+
+/* #Modules: sections, header, footer */
+
+.header {
+    background: url("../assets/images/bg-1.jpg") center center / cover no-repeat;
+    height: 263px;
+    position: relative;
+    text-align: center;
+}
+.header .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+}
+.header .subtitle {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    text-shadow: 1px 1px #333;
+}
+.hgroup {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: 75px;
+}
+
+/* SECTIONS */
+
+/* set-up */
+.cols {
+    margin: 70px 15px;
+}
+.col {
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.sm-title {
+    color: #666;
+    font-size: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.para-text {
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-bottom: 0;
+    margin-top: 15px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.photo {
+    width: 100%;
+}
+.link {
+    text-decoration: none;
+}
+
+/* THREE COLUMN SECTION */
+.three-col {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+.green-text {
+    color: #178A27;
+}
+.blue-text {
+    color: #31B0D5;
+}
+
+/* TWO COLUMN SECTION */
+.two-col {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+.two-col .para-text {
+    margin-top: 0;
+    padding: 27px;
+} 
