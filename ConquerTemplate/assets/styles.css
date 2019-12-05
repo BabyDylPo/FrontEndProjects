@@ -254,5 +254,60 @@ body {
 
 /* CONTACT SECTION */
 .contact {
-    back
+    background: url("../assets/images/bg-3.jpg") center center / cover no-repeat;
+    height: 710px;
+    padding-bottom: 60px;
+    padding-top: 80px;
+}
+.contact-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contact .title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #333;
+}
+.contact .para-text {
+    background-color: rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+}
+.footer .title {
+    color: #666;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.footer-text {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.line {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.copy {
+    color: #eee;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
